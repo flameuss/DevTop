@@ -10,7 +10,7 @@ include('verifica_login.php');
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="./style/theme.css">
+  <link rel="stylesheet" type="text/css" href="./styles/theme.css">
   <link rel="stylesheet" type="text/css" href="/vendor/twbs/bootstrap/dist/css/bootstrap.min.css">
   <script src="https://kit.fontawesome.com/4ce1d457b5.js" crossorigin="anonymous"></script>
 </head>
@@ -25,9 +25,14 @@ include('verifica_login.php');
           <b>DevTop</b>
         </a>
         <ul class="navbar-nav mx-auto">
-          <li class="nav-item text-white"> <a class="nav-link text-white" href="#"></a> </li>
-          <li class="nav-item text-white"> <a class="nav-link text-white" href="#"></a> </li>
-          <li class="nav-item text-white"> <a class="nav-link text-white" href="#"></a> </li>
+          <li class="nav-item text-white">
+            <a class="nav-link text-white" href="./cursos.php">Cursos</a>
+          </li>
+          <li class="nav-item text-white">
+            <a class="nav-link text-white" href="#">Novidades</a>
+          </li>
+          <li class="nav-item text-white">
+            <a class="nav-link text-white" href="#">Ranking</a>
         </ul>
         <ul class="navbar-nav">
           <li class="nav-item text-white"> <a class="nav-link text-white" href="logout.php">Logout</a> </li>

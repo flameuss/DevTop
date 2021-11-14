@@ -6,7 +6,7 @@
   <link rel="shortcut icon" href="./img/dt.ico" />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="./style/theme.css">
+  <link rel="stylesheet" type="text/css" href="./styles/theme.css">
   <link rel="stylesheet" type="text/css" href="/vendor/twbs/bootstrap/dist/css/bootstrap.min.css">
 </head>
 

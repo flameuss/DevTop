@@ -10,7 +10,7 @@ include('verifica_login.php');
   <link rel="shortcut icon" href="./img/dt.ico" />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="./style/theme.css">
+  <link rel="stylesheet" type="text/css" href="./styles/theme.css">
   <link rel="stylesheet" type="text/css" href="/vendor/twbs/bootstrap/dist/css/bootstrap.min.css">
 </head>
 
@@ -24,9 +24,14 @@ include('verifica_login.php');
           <b>DevTop</b>
         </a>
         <ul class="navbar-nav mx-auto">
-          <li class="nav-item text-white"> <a class="nav-link text-white" href="#"></a> </li>
-          <li class="nav-item text-white"> <a class="nav-link text-white" href="#"></a> </li>
-          <li class="nav-item text-white"> <a class="nav-link text-white" href="#"></a> </li>
+          <li class="nav-item text-white">
+            <a class="nav-link text-white" href="./cursos.php">Cursos</a>
+          </li>
+          <li class="nav-item text-white">
+            <a class="nav-link text-white" href="#">Novidades</a>
+          </li>
+          <li class="nav-item text-white">
+            <a class="nav-link text-white" href="#">Ranking</a>
         </ul>
         <ul class="navbar-nav">
           <li class="nav-item text-white"> <a class="nav-link text-white" href="logout.php">Logout</a> </li>
@@ -43,8 +48,8 @@ include('verifica_login.php');
           <div class="card " style="height: 350px;">
             <div class="card-body p-4">
 
-              <h2><b>Iniciando na Programação:</b></h2><br/>
-              <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p><br/>
+              <h2><b>Iniciando na Programação:</b></h2><br />
+              <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p><br />
               <a class="btn btn-secondary btn-block aling-baseline" href="exer_m01.php">Iniciar aula</a>
             </div>
           </div>
