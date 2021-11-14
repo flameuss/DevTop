@@ -54,7 +54,7 @@ Além disto é bom ter um editor para trabalhar com o código, como [VSCode](htt
 # Clone esse repositório
 $ git clone git@github.com:Flameuss/DevTop.git
 
-# A pasta deve estar dentro do htdocs do xampp para rodar lo seu localhost
+# A pasta deve estar dentro do htdocs do xampp para rodar no seu localhost
 
 # Entre na pasta
 $ cd devtop
