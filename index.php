@@ -49,9 +49,10 @@
     <div class="container">
       <div class="row">
         <div class="px-5 col-md-8 text-center mx-auto" style="">
-          <h3 class="display-4 text-secondary" style=""><u><b>DevTop</b></u></h3>
+          <!-- <h3 class="display-4 text-secondary" style=""><u><b>DevTop</b></u></h3> -->
+          <img class="img-fluid d-block mx-auto" src="./img/logo-01.png" width="600">
           <h2 class="my-3" style="">Venha aprender a programar com a DevTop!!</h2>
-          <p class="mb-3">Nossa plataforma simplificada e intuitiva&nbsp;</p> 
+          <p class="mb-3">Nossa plataforma simplificada e intuitiva&nbsp;</p>
           <img class="img-fluid d-block mx-auto" src="./img/laptop_02.png" width="750">
           <p class="mt-2"><small>Versão v0.1</small></p>
         </div>
@@ -82,8 +83,10 @@
       <div class="collapse navbar-collapse text-center justify-content-center" id="navbar3">
         <ul class="navbar-nav" style="">
           <li class="nav-item mx-2 text-light"> <a class="nav-link text-light" href="#">Perguntas Frequentes</a> </li>
-          <li class="nav-item mx-2"> <a class="nav-link navbar-brand mr-0 text-primary" href="#">
-              <b class="text-light">DevTop</b></a> </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link navbar-brand mr-0 text-primary" href="#">
+              <b class="text-light">DevTop</b></a>
+          </li>
           <li class="nav-item mx-2" style=""> <a class="nav-link text-light" href="#">Sobre Nós</a> </li>
         </ul>
       </div>
