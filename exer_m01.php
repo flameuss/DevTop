@@ -46,37 +46,49 @@ include('verifica_login.php');
         <div class="col-md-6" style="">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title"><u><b>Escolha a opção correta!!<br></b></u>Neste desafio, você usará uma array para salvar uma lista de ingredientes necessários para fazer um bolo.<br><br><b><u>Instruções</u></b>:<br>Substitua 'flour' por uma array[], por exemplo ingredients = [] Adicione algumas novas strings como 'flour', 'sugar', 'eggs' na array de ingredientes</h5>
+              <h5 class="card-title"><u><b>Algoritmos<br></b></u>
+                Um algoritmo é formalmente uma sequência finita de passos que levam a execução de uma tarefa. Podemos pensar em algoritmo como uma receita, uma sequência de instruções que dão cabo de uma meta específica. Estas tarefas não podem ser redundantes nem subjetivas na sua definição, devem ser claras e precisas.
+                Até mesmo as coisas mais simples Por exemplo:
+
+                <br><br><b><u> Podem ser descritas por sequências lógicas</u></b>:<br>“Chupar uma bala”<br/>
+                • Pegar a bala
+                • Retirar o papel
+                • Chupar a bala
+                • Jogar o papel no lixo
+              </h5>
               <a href="#" class="btn btn-secondary text-light">Mostrar Dicas</a>
             </div>
           </div>
         </div>
         <div class="col-md-6" style="">
           <div class="card">
-            <div class="card-header" contenteditable="true">Exercicio 1:</div>
+            <div class="card-header" contenteditable="true">Exercício 1:</div>
             <div class="card-body" style="">
               <blockquote class="blockquote mb-0" style="">
-                <p><b>var ingredients = 'flour';&nbsp;<br>cook(ingredients);&nbsp;<br>cook(ingredients);&nbsp;<br>&nbsp; [&nbsp;<br>&nbsp; &nbsp;''<br>&nbsp; &nbsp; ,&nbsp;<br>&nbsp; ];</b></p><a class="btn btn-secondary text-light" href="#">Executar código</a><br><br>
-                <footer class="blockquote-footer"><b>Escolha a opção correta baseada no problema acima:&nbsp;</b><br><br></footer>
+                <p><b>usando conceitos de sequência lógica decreva a sequencia lógica para tomar banho em um bloco de notas.
+                  </b></p>
+                <!-- <a class="btn btn-secondary text-light" href="#">Executar código</a> -->
+                <br><br>
+                <footer class="blockquote-footer"><b>agora responda quais elementos não se encaixariam nessa sequencia:</b><br><br></footer>
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                  <label class="form-check-label" for="inlineRadio1">Var</label>
+                  <label class="form-check-label" for="inlineRadio1"> abrir o registro</label>
                 </div>
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                  <label class="form-check-label" for="inlineRadio1">Cook()</label>
+                  <label class="form-check-label" for="inlineRadio1">tomar água</label>
                 </div>
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                  <label class="form-check-label" for="inlineRadio1"> Ingredients</label>
+                  <label class="form-check-label" for="inlineRadio1"> se ensaboar</label>
                 </div><br>
                 <div class="form-check form-check-inline pt-1" style="">
                   <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                  <label class="form-check-label" for="inlineRadio2">[ ]</label>
+                  <label class="form-check-label" for="inlineRadio2">entrar no chuveiro</label>
                 </div>
                 <div class="form-check form-check-inline pt-1" style="">
                   <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                  <label class="form-check-label" for="inlineRadio2"> str</label>
+                  <label class="form-check-label" for="inlineRadio2">fechar o registro</label>
                 </div>
                 <br><br> <button type="button" class="btn text-white btn-secondary">Confirmar</button>
               </blockquote>

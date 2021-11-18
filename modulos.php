@@ -45,11 +45,10 @@ include('verifica_login.php');
       <h2>Escolha o nódulo que deseja começar ou prosseguir <?php echo $_SESSION['login']; ?>!</h2>
       <div class="row">
         <div class="col-lg-4 p-3 col-md-12">
-          <div class="card " style="height: 350px;">
+          <div class="card " style="height: 480px;">
             <div class="card-body p-4">
-
-              <h2><b>Iniciando na Programação:</b></h2><br />
-              <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p><br />
+              <h2 style="height: 80px;"><b>Iniciando na Lógica de Programação</b></h2><br />
+              <p style="height: 200px;">Lógica de programação é a técnica de encadear pensamentos para atingir determinado objetivo, ela permite definir a sequência lógica (algoritmos) para o desenvolvimento de sistemas e programas.</p><br />
               <a class="btn btn-secondary btn-block aling-baseline" href="exer_m01.php">Iniciar aula</a>
             </div>
           </div>
@@ -61,30 +60,32 @@ include('verifica_login.php');
     <div class="container">
       <div class="row">
         <div class="col-lg-4 p-3 col-md-6">
-          <div class="card">
+          <div class="card " style="height: 450px;">
             <div class="card-body p-4">
-              <h2><b>Introdução I</b></h2>
-              <p>I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now.</p>
+              <h2 style="height: 80px;"><b>Introdução I Desenvolvendo Algoritmos</b></h2><br />
+              <p style="height: 200px;">Decrição do desenvolvimento de algoritmos utilizando conceitos de lógica de programação e o conhecimento de como os desenvolver...</p><br />
               <i class="fa fa-lock" aria-hidden="true"></i>
               <a>Bloqueado</a>
             </div>
+
+
           </div>
         </div>
-        <div class="col-lg-4 p-3 col-md-6 ">
-          <div class="card">
+        <div class="col-lg-4 p-3 col-md-6">
+          <div class="card " style="height: 450px;">
             <div class="card-body p-4">
-              <h2><b>Introdução II</b></h2>
-              <p>I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now.</p>
+              <h2 style="height: 80px;"><b>Introdução II Teste de Mesa</b></h2><br />
+              <p style="height: 200px;">Neste Módulo itemos ver como um algoritmo deverá ser testado. Este teste é chamado de teste de teste de mesa...</p><br />
               <i class="fa fa-lock" aria-hidden="true"></i>
               <a>Bloqueado</a>
             </div>
           </div>
         </div>
         <div class="col-lg-4 p-3 col-md-6">
-          <div class="card">
+          <div class="card " style="height: 450px;">
             <div class="card-body p-4">
-              <h2><b>Introdução III</b></h2>
-              <p>I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now.</p>
+              <h2 style="height: 80px;"><b>Introdução III à Lógica de Programação</b></h2><br />
+              <p style="height: 200px;">I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now.</p><br />
               <i class="fa fa-lock" aria-hidden="true"></i>
               <a>Bloqueado</a>
             </div>
@@ -97,30 +98,30 @@ include('verifica_login.php');
     <div class="container">
       <div class="row">
         <div class="col-lg-4 p-3 col-md-6">
-          <div class="card">
-            <div class="card-body p-4" style="">
-              <h2><b>Intermediário&nbsp;I</b></h2>
-              <p style="">I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now.</p>
+          <div class="card " style="height: 450px;">
+            <div class="card-body p-4">
+              <h2 style="height: 80px;"><b>Intermediario I</b></h2><br />
+              <p style="height: 200px;">I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now.</p><br />
               <i class="fa fa-lock" aria-hidden="true"></i>
               <a>Bloqueado</a>
             </div>
           </div>
         </div>
         <div class="col-lg-4 p-3 col-md-6">
-          <div class="card">
+          <div class="card " style="height: 450px;">
             <div class="card-body p-4">
-              <h2><b>Intermediário II</b></h2>
-              <p>I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now.</p>
+              <h2 style="height: 80px;"><b>Intermediario II</b></h2><br />
+              <p style="height: 200px;">I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now.</p><br />
               <i class="fa fa-lock" aria-hidden="true"></i>
               <a>Bloqueado</a>
             </div>
           </div>
         </div>
         <div class="col-lg-4 p-3 col-md-6">
-          <div class="card">
+          <div class="card " style="height: 450px;">
             <div class="card-body p-4">
-              <h2><b>Intermediário III</b></h2>
-              <p>I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now.</p>
+              <h2 style="height: 80px;"><b>Intermediario III</b></h2><br />
+              <p style="height: 200px;">I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now.</p><br />
               <i class="fa fa-lock" aria-hidden="true"></i>
               <a>Bloqueado</a>
             </div>
@@ -133,30 +134,30 @@ include('verifica_login.php');
     <div class="container">
       <div class="row">
         <div class="col-lg-4 p-3 col-md-6">
-          <div class="card">
-            <div class="card-body p-4" style="">
-              <h2><b>Avançado I</b></h2>
-              <p style="">I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now.</p>
+          <div class="card " style="height: 450px;">
+            <div class="card-body p-4">
+              <h2 style="height: 80px;"><b>Avançado I</b></h2>
+              <p style="height: 200px;">I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now.</p>
               <i class="fa fa-lock" aria-hidden="true"></i>
               <a>Bloqueado</a>
             </div>
           </div>
         </div>
         <div class="col-lg-4 p-3 col-md-6">
-          <div class="card">
+          <div class="card " style="height: 450px;">
             <div class="card-body p-4">
-              <h2><b>Avançado II</b></h2>
-              <p>I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now.</p>
+              <h2 style="height: 80px;"><b>Avançado II</b></h2>
+              <p style="height: 200px;">I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now.</p>
               <i class="fa fa-lock" aria-hidden="true"></i>
               <a>Bloqueado</a>
             </div>
           </div>
         </div>
         <div class="col-lg-4 p-3 col-md-6">
-          <div class="card">
+          <div class="card " style="height: 450px;">
             <div class="card-body p-4">
-              <h2><b>Avançado III</b></h2>
-              <p>I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now.</p>
+              <h2 style="height: 80px;"><b>Avançado III</b></h2>
+              <p style="height: 200px;">I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now.</p>
               <i class="fa fa-lock" aria-hidden="true"></i>
               <a>Bloqueado</a>
             </div>
