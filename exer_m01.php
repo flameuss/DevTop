@@ -10,8 +10,7 @@ include('verifica_login.php');
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="./styles/theme.css">
-  <link rel="stylesheet" type="text/css" href="/vendor/twbs/bootstrap/dist/css/bootstrap.min.css">
-  <script src="https://kit.fontawesome.com/4ce1d457b5.js" crossorigin="anonymous"></script>
+  <!-- <link rel="stylesheet" type="text/css" href="/vendor/twbs/bootstrap/dist/css/bootstrap.min.css"> -->
 </head>
 
 <body>
