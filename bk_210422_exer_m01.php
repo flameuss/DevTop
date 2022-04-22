@@ -112,6 +112,7 @@ try {
           </div>
         </div>
 
+
         <form action="" method="post"></form>
         <?php
         // FIXME -> Primeiro Loop para obter as questões
@@ -119,82 +120,98 @@ try {
         foreach ($arr as $reg) {
           $count++;
         ?>
-          <?php if ($count <= 0) { ?>
-            <div class="col-md-6" id="card_<?php echo $count ?>" style="">
-            <?php } else { ?>
-              <div class="col-md-6 hidden" id="card_<?php echo $count ?>" style="">
-              <?php } ?>
-              <!-- Ínicio do Card Que vai ser modificado -->
-              <div class="card mb-5">
-                <div class="card-header" contenteditable="true">Questão <?php echo $reg['id_questao'] ?></div>
-                <div class="card-body">
-                  <p><b><?php echo  $reg['descricao_questao'] ?>.</b></p>
-                  <br><br>
-                  <footer class="blockquote-footer">
-                    <!-- <b>agora responda quais elementos não se encaixariam nessa sequencia:</b><br><br> -->
-                  </footer>
+          <div class="col-md-6 hidden" id="card_<?php echo $count ?>" style="">
+            <!-- Ínicio do Card Que vai ser modificado -->
+            <span class="hidden data_atual">#card_<?php echo $count ?></span>
+            <div class="card mb-5">
+              <div class="card-header" contenteditable="true">Questão <?php echo $reg['id_questao'] ?></div>
+              <div class="card-body">
+                <p><b><?php echo  $reg['descricao_questao'] ?>.</b></p>
+                <br><br>
+                <footer class="blockquote-footer">
+                  <!-- <b>agora responda quais elementos não se encaixariam nessa sequencia:</b><br><br> -->
+                </footer>
 
-                  <?php
-                  // FIXME -> Segundo Loop para obter as alternativas
-                  foreach ($arrQuestoes as $regAlt) {
-                    // FIXME -> Verificando se o ID da questão (vinculada a alternativa) é igual a da questão exibida atualmente
-                    if ($reg['id_questao'] == $regAlt['questao']) {
-                      echo " <div class='form-check form-check-inline'><input class='form-check-input' type='radio' name='inlineRadioOptions' id='inlineRadio1' value='option1'>";
-                      echo "<label class='form-check-label' for='inlineRadio1'>";
-                      echo $regAlt['alternativas'];
-                      echo "</label></div>";
-                    }
+                <?php
+                // FIXME -> Segundo Loop para obter as alternativas
+                foreach ($arrQuestoes as $regAlt) {
+                  // FIXME -> Verificando se o ID da questão (vinculada a alternativa) é igual a da questão exibida atualmente
+                  if ($reg['id_questao'] == $regAlt['questao']) {
+                    echo " <div class='form-check form-check-inline'><input class='form-check-input' type='radio' name='inlineRadioOptions' id='inlineRadio1' value='option1'>";
+                    echo "<label class='form-check-label' for='inlineRadio1'>";
+                    echo $regAlt['alternativas'];
+                    echo "</label></div>";
                   }
-                  ?>
-                  <br><br> <button type="button" onclick="onClick()" class="btn text-white btn-secondary">Confirmar</button>
-                  </blockquote>
-                </div>
+                }
+                ?>
+                <br><br> <button type="button" id="btn-confirmar" class="btn text-white btn-secondary">Confirmar</button>
+                </blockquote>
               </div>
-              <!-- Final do Card Que vai ser modificado -->
-              </div>
-            <?php
-          } ?>
-            </form>
             </div>
+            <!-- Final do Card Que vai ser modificado -->
+          </div>
+        <?php } ?>
+        </form>
       </div>
     </div>
+  </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
-    <nav class="navbar navbar-expand-md navbar-dark bg-secondary" style="">
-      <div class="container justify-content-center"> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar3">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse text-center justify-content-center" id="navbar3">
-          <ul class="navbar-nav" style="">
-            <li class="nav-item mx-2 text-light"> <a class="nav-link text-light" href="#">Perguntas Frequentes</a> </li>
-            <li class="nav-item mx-2"> <a class="nav-link navbar-brand mr-0 text-primary" href="#">
-                <b class="text-light">DevTop</b></a> </li>
-            <li class="nav-item mx-2" style=""> <a class="nav-link text-light" href="#">Sobre Nós</a> </li>
-          </ul>
-        </div>
+  <nav class="navbar navbar-expand-md navbar-dark bg-secondary" style="">
+    <div class="container justify-content-center"> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar3">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-center justify-content-center" id="navbar3">
+        <ul class="navbar-nav" style="">
+          <li class="nav-item mx-2 text-light"> <a class="nav-link text-light" href="#">Perguntas Frequentes</a> </li>
+          <li class="nav-item mx-2"> <a class="nav-link navbar-brand mr-0 text-primary" href="#">
+              <b class="text-light">DevTop</b></a> </li>
+          <li class="nav-item mx-2" style=""> <a class="nav-link text-light" href="#">Sobre Nós</a> </li>
+        </ul>
       </div>
-    </nav>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <!-- Ínicio do Alert -->
-    <script>
-      var clicks = 0;
-      var jsvar = '<?= count($arr) ?>';
-      function onClick() {
-        clicks += 1;
-        var valor_arr = jsvar
-        if (clicks < valor_arr) {
-          var data_next = "#card_" + (clicks)
-          var data_previous = "#card_" + (clicks - 1)
-          $(data_previous).addClass("hidden")
-          $(data_next).removeClass("hidden")
-        } else {
-          console.log("erro")
-        }
-      };
-    </script>
-    <!-- Final do Alert -->
+    </div>
+  </nav>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- Ínicio do Alert -->
+  <script>
+    // Swal.fire({
+    //   icon: 'success',
+    //   title: 'Oops...',
+    //   text: 'Sucesso!',
+    //   footer: '<a href="">Why do I have this issue?</a>'
+    // })
+
+    const valor_id = $(".data_atual").html()
+        console.log(valor_id)
+    $(valor_id).removeClass("hidden")
+
+    $("#btn-confirmar").click(function() {
+      const novo_valor_anterior = modify_card_previous(valor_id)
+      const novo_valor_seguinte = modify_card_next(valor_id)
+
+      $(novo_valor_anterior).addClass("hidden")
+      $(novo_valor_seguinte).removeClass("hidden")
+    })
+
+    function modify_card_previous(valor_id) {
+      const novo_valor = valor_id.split("#card_");
+      if (parseInt(novo_valor[1]) <= 0) {
+        return valor_id
+      } else {
+        const data_anterior = "#card_" + (parseInt(novo_valor[1]) - 1)
+        return data_anterior
+      }
+    }
+
+    function modify_card_next(valor_id) {
+      const novo_valor = valor_id.split("#card_");
+      const data_seguinte = "#card_" + (parseInt(novo_valor[1]) + 1)
+      return data_seguinte
+    }
+  </script>
+  <!-- Final do Alert -->
 </body>
 
 </html>
